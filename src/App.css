@@ -27,7 +27,7 @@ Link{
   font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65, wf_8fa0252f60e04f979c3e3b41b, orig_itcavantgardestddemi;
   font-size: 20px;
 }
-.home{
+.home,.category{
   background-color: rgb(204,204,204);
   height: 100vh;
 }
@@ -35,6 +35,9 @@ Link{
   width: 95%;
   height: 100%;
   margin: auto;
+}
+.home-navbar{
+  height: 32%;
 }
 .navbar{
   padding: 1rem;
@@ -137,7 +140,7 @@ Link{
   
 }
 .item-name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     
 }
@@ -220,6 +223,7 @@ input,select,textarea{
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
 }
 .footer-inner{
   width: 50%;
@@ -230,4 +234,99 @@ input,select,textarea{
   font-size: larger;
   font-weight: 700;
   letter-spacing: 0.35rem;
+}
+.dropdown {
+  background-color: rgb(204,204,204);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.dropdown div {
+  text-align: center;
+  font-size: medium;
+  font-weight: 700;
+  color: #172154;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown div:hover {
+  color: #6FB745;
+}
+
+/* -------------------------CATEGORY------------------------- */
+.category-container-body{
+  overflow: auto;
+  scrollbar-width: none;
+  height: 68%;
+  width: 100%;
+}
+.category-heading{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.bounce-house{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bounce-text{
+  text-align:justify;
+  font-size: large;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+.bounce-heading{
+  font-size:2.3rem;
+  font-weight: bolder;
+}
+.bounce-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: #6FB745 solid 4px;
+}
+.bounce-list {
+  list-style: disc;
+  font-weight: 700;
+  font-size: large;
+  list-style-position: inside;
+  padding: 1px 5px;
+}
+.category-heading{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.category-line{
+  border-color: #6FB745;
+  width: 7%;
+}
+.category-products{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  padding: 1rem;
+  
+}
+.each-item img{
+  width: 100%;
+}
+.category-box{
+  background-color: #6FB745;
+  width:max-content;
+  text-align: center;
+  padding: 1px 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 0.8rem;
 }

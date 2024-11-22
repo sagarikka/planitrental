@@ -8,7 +8,7 @@ function Item({thumbnail,desc,name}) {
       <img src={thumbnail} alt='item-image'/>
       <div className='item-button'>Browse All Items</div>
       <div className='item-text space-y-0.5'>
-        <div><Link className='underline item-name green-text'>{name}</Link></div>
+        <div><Link className='underline item-name green-text' to={`/planitrentals/${name}`}>{name}</Link></div>
         <div className='item-desc blue-text'>{desc}</div>
       </div>
     </div>

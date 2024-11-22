@@ -30,7 +30,7 @@ function Home() {
                     {data.map((Data)=>{
                       return  <Item key={Data.id}
                               thumbnail={Data.thumbnail}
-                              name={Data.name}
+                              name={Data.category}
                               desc={Data.desc}
                         />
                     })}
