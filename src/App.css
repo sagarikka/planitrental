@@ -1,38 +1,233 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Style+Script&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.blue-text,.menu{
+  color: #172154;
+}
+.menu{
+  cursor: pointer;
+}
+.menu :hover{
+  color: #6FB745;
+}
+Link{
+  cursor: pointer;
+}
+.red-text{
+  color: #F60419;
+}
+.green-text{
+  color: #6FB745;
+}
+.contact-no{
+  letter-spacing: 0.15em;
+  font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65, wf_8fa0252f60e04f979c3e3b41b, orig_itcavantgardestddemi;
+  font-size: 20px;
+}
+.home{
+  background-color: rgb(204,204,204);
+  height: 100vh;
+}
+.home-container{
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+.navbar{
+  padding: 1rem;
+  height: 32%;
+  background-color: rgb(204,204,204);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.navbar img{
+  width: 14rem;
+}
+.navbar-upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-lower{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order-text{
+  font-size: 31px;
+  font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65,wf_25fa0252f60e04f97;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+.desc-text{
+  letter-spacing: 0.10em;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65, wf_8fa0252f60e04f979c3e3b41b, orig_itcavantgardestddemi;
+}
+.home-container-body-text{
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+.home-text-upper{
+  width: 100%;
+  background-color: rgb(204,204,204);
+}
+.home-container-body{
+  overflow: auto;
+  scrollbar-width: none;
+  height: 68%;
+  width: 100%;
+  background-image: url("./utils/home-background.webp");
+}
+.welcome{
+  font-size: 110px;
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+.desc{
+  font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65, wf_8fa0252f60e04f979c3e3b41b, orig_itcavantgardestddemi;
+  font-size: 19px;
+  font-weight: 600;
+}
+.products{
+  background-color: rgb(204,204,204);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.item-text{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  width: 85%;
+}
+.item-button{
+  border: solid  #6FB745 ;
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #172154;
+  color: white;
+  font-size: small;
+  font-weight: 700;
+  position: relative;
+  bottom: 1rem;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem;
+  border: solid 1px;
+  
+}
+.item-name{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.item-desc{
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-left{
+  padding: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-img-1,.about-img-2{
+  width: 50%;
 }
+.about-desc-text{
+  width: 75%;
+  font-weight: 700;
+  font-family: wfont_f51750_8fa0252f60e04f979c3e3b41bec8de65, wf_8fa0252f60e04f979c3e3b41b, orig_itcavantgardestddemi;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.about-text{
+  letter-spacing: 0.45em;
+  font-weight: 700;
+  font-size: larger;
+}
+.line{
+  border-bottom: 5px solid #172154; 
+  width: 4%;
+}
+.contact-container{
+  width: 40%;
+  background-color: rgb(204,204,204);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2rem;
+}
+.contact-container-inner{
+  width: 85%;
+}
+.name{
+  display: flex;
+}
+input,select,textarea{
+  padding: 0.4rem;
+  background-color: rgb(204,204,204);
+  border-bottom: 2px solid #172154;
+  width: 100%;
+  color: #6FB745;
+  outline: none;
+}
+
+.custom-select option {
+  color: green; 
+}
+.contact-text{
+  letter-spacing: 0.45em;
+}
+.contact{
+  padding: 2rem;
+}
+.submit{
+  border: solid  #6FB745 ;
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #172154;
   color: white;
+  font-size: small;
+  font-weight: 700;
+  position: relative;
+  bottom: 1rem;
+  width: 8rem;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.footer{
+  background-color: rgb(204,204,204);
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-inner{
+  width: 50%;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.footer-header{
+  font-size: larger;
+  font-weight: 700;
+  letter-spacing: 0.35rem;
 }
