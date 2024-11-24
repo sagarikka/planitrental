@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CategoryItems({name,thumbnail,price,batch}) {
   return (
+    <Link to={`/planitrentals/product-page/${name}`}>
     <div className='each-item'>
       {batch&&<div className='category-box'>{batch}</div>}
       <img src={thumbnail} alt='category-image'/>
@@ -9,6 +11,7 @@ function CategoryItems({name,thumbnail,price,batch}) {
         <div>{name} | {price}</div>
       </div>
     </div>
+    </Link>
   )
 }
 

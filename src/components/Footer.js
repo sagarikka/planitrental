@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-      <div className='footer-inner flex justify-center items-center '>
+      <div className='footer-inner flex-col flex md:flex-row lg:flex-row sm:flex-col justify-center items-center space-y-8'>
         <div className='footer-1 blue-text space-y-2'>
             <div className='footer-header'>OUR STORE</div>
             <div>

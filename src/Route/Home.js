@@ -5,15 +5,12 @@ import { data } from '../utils/data'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import  Container  from '../utils/Container'
 
 function Home() {
   return (
-    <div className='home '>
-       <div className='home-container'>
-            <div className='home-navbar'>
-              <Navbar/>
-            </div>
-            <div className='home-container-body'>
+            <Container>
+              <div className='home-container'>
                 <div className='home-text-upper'>
                 <div className='home-container-body-text'>
                     <div className='green-text welcome'>welcome</div>
@@ -38,15 +35,11 @@ function Home() {
                 <div className='home-about'>
                     <About/>
                 </div>
-                <div className='home-coontact'>
+                <div className='home-contact'>
                     <Contact/>
                 </div>
-                <div className='home-footer'>
-                    <Footer/>
-                </div>
-            </div>
-      </div>
-    </div>
+              </div>
+            </Container>
   )
 }
 

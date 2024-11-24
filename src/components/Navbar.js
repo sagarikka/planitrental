@@ -19,11 +19,13 @@ function Navbar() {
 
   return (
     <div className="navbar space-y-2">
-      <div className="navbar-upper space-x-6">
+      <div className="navbar-upper space-x-6 ">
         <img src={logo} alt="logo" />
         <div className="space-y-4">
-          <div className="flex text-xl space-x-6 font-semibold menu">
-            <div className="green-text">Home</div>
+        {/* MENU */}
+          {/* <div></div> */}
+          <div className="flex text-xl space-x-6 font-semibold menu ">
+            <div className="green-text"><Link to="/planitrentals">Home</Link></div>
             <div>Location</div>
             <div
               onMouseEnter={handleMouseEnter}
@@ -50,6 +52,8 @@ function Navbar() {
             <div>Policies</div>
             <div>Blog</div>
           </div>
+        {/* MENU END */}
+
           <div className="flex justify-end blue-text font-semibold contact-no">
             Call Or Text Us!{' '}
             <Link className="underline">801-319-5524</Link>

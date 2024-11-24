@@ -1,19 +1,16 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import { Link, useParams } from 'react-router-dom'
 import CategoryItems from '../components/CategoryItems';
-import Footer from '../components/Footer';
 import { categorydata } from '../utils/categorydata';
-import { data } from 'autoprefixer';
+import star from "../utils/star-removebg-preview.png"
+import Container from '../utils/Container';
+
 function Category() {
     const {category}=useParams();
+    console.log(category);
     const Data=categorydata.filter(data=>data.Category===category);
   return (
-    <div className='category'>
-       <div className='home-navbar'>
-              <Navbar/>
-        </div>
-        <div className='category-container-body'>
+        <Container>
             <div className='category-heading space-y-4 py-4'>
                 {category==="Bounce Houses"&& 
                    <div className='bounce-house space-y-4'>
@@ -29,22 +26,17 @@ function Category() {
                                 <li>No intrusive setups with strangers in your yard</li>
                                 <li>Custom & Unique Designs only our company has!</li>
                             </ul>
-                            <img src='' alt='star'/>
+                            <img src={star} alt='star' width={150} className='pr-8 hide-star' />
                         </div>
                         <div className='underline blue-text text-2xl font-semibold'><Link> Bounce House FAQ</Link></div>
                     </div>
                 }
-                <div className='blue-text category-heading'>{category}</div>
+                <div className='blue-text category-heading-text'>{category}</div>
                 <div className='red-text underline text-2xl font-bold'>2024 Holiday Pricing & Details</div>
                 <div className='line category-line'></div>
             </div>
             
-            <div className='category-products space-x-5'>
-                {/* <CategoryItems/>
-                <CategoryItems/>
-                <CategoryItems/>
-                <CategoryItems/>
-                <CategoryItems/> */}
+            <div className='category-products space-x-5 space-y-5'>
                 {
                     Data.map((data)=>{
                         return <CategoryItems
@@ -57,11 +49,7 @@ function Category() {
                     })
                 }
             </div>
-            <div className='home-footer'>
-                <Footer/>
-            </div>
-        </div>
-    </div>
+        </Container>
   )
 }
 

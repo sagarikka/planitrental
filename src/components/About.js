@@ -4,8 +4,8 @@ import image2 from "../utils/about2.webp"
 
 function About() {
   return (
-    <div className='about flex bg-white'>
-      <div className='about-left w-1/2 flex flex-col jutsify-center items-center space-y-6 '>
+    <div className='about flex-col flex bg-white sm:flex-col md:flex-row lg:flex-row'>
+      <div className='about-left w-full sm:w-full md:w-1/2 flex flex-col jutsify-center items-center space-y-6 '>
         <div className='about-text green-text'>ABOUT US</div>
         <div className='line'></div>
         <div className='about-desc-text blue-text space-y-4'>
@@ -14,7 +14,7 @@ function About() {
             <div>We firmly believe that our new approach to the rental world will change the way you look at planning parties, events, reunions, or trips. With our rock-bottom prices, it just makes sense to rent!</div>
         </div>
       </div>
-      <div className='about-right flex w-1/2'>
+      <div className='about-right flex w-full sm:w-full md:w-1/2'>
         <img src={image} alt='about-image1' className='about-img-1 '/>
         <img src={image2} alt='about-image2' className='about-img-2 '/>
       </div>

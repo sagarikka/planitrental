@@ -4,11 +4,11 @@ function Contact() {
     const [value,setValue]=useState("")
     console.log(value)
   return (
-    <div className='contact flex flex-col justify-center items-center space-y-8'>
-      <div className='blue-text contact-text text-4xl font-bold'>CONTACT US</div>
+    <div className='contact flex flex-col justify-center items-center space-y-8 '>
+      <div className='blue-text contact-text text-2xl sm:text-4xl md:text-4xl font-bold'>CONTACT US</div>
       <div className='line'></div>
       <div className='contact-container '>
-      <div className='contact-container-inner space-y-4 font-semibold'>
+      <div className='contact-container-inner space-y-4 font-semibold w-full'>
         <div className='name space-x-8'>
             <div className='w-1/2  '>
                 <div className='text-2xl blue-text'>First name<span className='green-text'>*</span></div>
